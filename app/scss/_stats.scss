@@ -1,0 +1,122 @@
+.stats {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    // .stats__left
+
+    &__left {
+        font-size: 450px;
+       color: #756aee;
+    }
+
+    // .stats__center
+
+    &__center {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 40px;
+        text-align: left;
+    }
+
+    // .stats__center-title
+
+    &__center-title {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 40px;
+        border-left: 4px solid darkgray;
+        padding-left: 30px;
+    }
+
+    // .stats__center-desc
+
+    &__center-desc {
+        font-size: 16px;
+        color: darkgrey;
+        letter-spacing: 1px;
+    }
+
+    // .stats__center-btn
+
+    &__center-btn {
+        letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 200px;
+    height: 70px;
+    background: #756aee;
+    padding: 30px;
+    color: white;
+    transition: .3s linear;
+    &:hover {
+        background: #000;
+    }
+    }
+
+    // .stats__right
+
+    &__right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
+       
+    }
+
+    // .stats__right-item
+
+    &__right-item {
+        flex: 0 1 250px;
+        padding: 30px 0;
+
+        &:nth-child(1) {
+            border-right: 1px solid darkgray;
+            border-bottom: 1px solid darkgray;
+        }
+        &:nth-child(2) {
+            border-bottom: 1px solid darkgray;
+        }
+        &:nth-child(3) {
+            border-right: 1px solid darkgray;
+        }
+    
+    h3 {
+        font-size: 100px;
+    }
+    p {
+        font-size: 20px;
+        color: darkgray;
+    }
+}
+}
+
+.clients {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+
+    // .clients__item
+
+    &__item {
+        border: 1px solid darkgrey;
+        transition: .3s ease;
+    
+    &:hover {
+        transform: scale(0.9);
+        border: 10px double black;
+        
+        }
+    }
+}
+
+

@@ -1,0 +1,141 @@
+.getmore {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+    // .getmore__left
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        flex: 0 1 35%;
+    }
+
+    // .getmore__title
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        
+    }
+
+    // .getmore__tabs
+
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+        font-size: 32px;
+        color: darkgrey;
+        border-bottom: 2px solid darkgrey;
+    }
+
+    // .getmore__tabs-item
+
+    &__tabs-item {
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        transition: .3s ease;
+        position: relative;
+        transition: .3s ease;
+        &:hover {
+            color: #756aee;
+        }
+
+        &.active {
+            transition: .3s ease;
+            position: relative;
+            color: #756aee;
+            &::before {
+                content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: #756aee;
+            transition: .3s ease;
+            }
+        }
+    }
+
+    // .getmore__content
+
+    &__content {
+    }
+
+    // .getmore__content-item
+
+    &__content-item {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+
+    // .getmore__content-subtitle
+
+    &__content-subtitle {
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1,7px;
+        color: #151515;
+        margin-bottom: 20px;
+    }
+
+    // .getmore__content-desc
+
+    &__content-desc {
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    // .getmore__btns
+
+    &__btns {
+        &-left {
+            letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 200px;
+    height: 70px;
+    background: #756aee;
+    padding: 25px;
+    color: white;
+    margin-right: 20px;
+    transition: .3s linear;
+    animation: button 0.3s;
+    &:hover {
+        background: #000;
+    }
+        }
+
+        &-right {
+            letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 300px;
+    height: 70px;
+    padding: 25px;
+    color: black;
+    transition: .3s linear;
+    animation: button 0.3s;
+    border: 1px solid black;
+    &:hover {
+        border:1px solid #756aee;
+        color: #756aee;
+    }
+        }
+    }
+
+    // .getmore__img
+
+    &__img {
+    }
+}
+

@@ -1,0 +1,118 @@
+.service {
+    padding: 80px 200px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+
+    // .service__img
+
+    &__img {
+        & img {
+        border-radius: 30px;
+        overflow: hidden;
+        object-fit: cover;}
+    }
+
+
+    & h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    // .service__cards
+
+    &__cards {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+    }
+
+    // .service__card
+
+    &__card {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+        width: 250px;
+        height: 270px;
+        border: 1px solid $separator-color;
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        position: relative;
+        transition: .3s ease;
+
+        &:hover {
+            
+            box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.27);
+            & span {
+                width: 150px;
+                background: #756aee;
+            }
+        }
+
+        & img {
+            width: 50px;
+            height: 50px;
+           display: block;
+        }
+
+        & span {
+            width: 100px;
+            height: 4px;
+            background: darkgrey;
+            transition: .3s ease;
+        }
+    }
+
+    // .service__card--title
+
+    &__card--title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    // .service__card--link
+
+    &__card--link {
+        letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 200px;
+    height: 70px;
+    background: #756aee;
+    padding: 25px;
+    color: white;
+    transition: .3s linear;
+    animation: button 0.3s;
+
+    @keyframes button {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+    }}
+
+    &:hover {
+        background: #000;
+    }
+    }
+
+    // .service__card--desc
+
+    &__card--desc {
+        font-weight: 700;
+        font-size: 14px;
+        color: $text-color;
+    }
+}
+.container {
+}

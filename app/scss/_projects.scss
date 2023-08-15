@@ -1,0 +1,149 @@
+.projects {
+    text-align: center;
+
+
+
+    // .projects__title
+
+    &__title {
+        font-size: 42px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
+    // .projects__desc
+
+    &__desc {
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    // .projects__list
+
+    &__list {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        padding-bottom: 30px;
+
+    }
+
+    // .projects__item
+
+    &__item {
+        cursor: pointer;
+        color: $text-color;
+        &.active{
+            color: #756aee;
+            
+        }
+
+        &:hover {
+                color: #756aee;
+            }
+        
+
+        &--span {
+            display: inline-block;
+            height: 22px;
+            width: 2px;
+            background: $text-color;
+            margin: 0 15px;
+        }
+    }
+}
+
+.projects {
+
+    // .projects__content
+
+    &__content {
+        display: none;
+        
+
+        &.active {
+            display: flex;
+            justify-content: center;
+            color: #756aee;
+        }
+
+    }
+
+    // .projects__content-item
+
+    &__content-item {
+        width: 380px;
+        height: 320px;
+       
+
+div {
+    padding: 100px 60px;
+    background: white;
+    transform: scale(0);
+    transition: .3s linear;
+}
+
+       &:hover div {
+       transform: scale(1);
+       }
+
+        &--1 {
+            background: url(../images/mobileaps1.jpg);
+        }
+        &--2 {
+            background: url(../images/mobileaps2.jpg);
+        }
+        &--3 {
+            background: url(../images/custom1.jpg);
+        }
+        &--4 {
+            background: url(../images/custom2.jpg);
+        }
+        &--5 {
+            background: url(../images/testing1.jpg);
+        }
+        &--6 {
+            background: url(../images/testing2.jpg);
+        }
+        &--7 {
+            background: url(../images/testing3.jpg);
+        }
+        &--8 {
+            background: url(../images/ux.jpg);
+        }
+    }
+
+    // .projects__content-inner
+
+    &__content-inner {
+       
+       
+    }
+
+    // .projects__content-title
+
+    &__content-title {
+        margin: 20px 0;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    // .projects__content-desc
+
+    &__content-desc {
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+.active {
+}
+
+

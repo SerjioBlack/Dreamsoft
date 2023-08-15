@@ -1,0 +1,202 @@
+.footer {
+    background: #1b1929;
+    color: white;
+    padding: 40px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.contacts {
+    flex:1 1 30%;
+
+		// .contacts__logo
+
+		&__logo {
+           
+		}
+
+		// .contacts__title
+
+		&__title {
+            margin: 30px 0;
+            color: darkgray;
+            font-weight: 700;
+		}
+
+		// .contacts__item
+
+		&__item {
+            display: flex;
+            gap: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid darkgray;
+
+            h6 {
+                color: #9f97f9;
+                font-weight: 700;
+            }
+            p {
+                font-weight: 700;
+            }
+		}
+
+		// .contacts__social
+
+		&__social {
+		}
+
+		// .contacts__social-icon
+
+		&__social-icon {
+            cursor: pointer;
+            margin-right: 20px;
+            transition: .3s ease;
+            &:hover {
+                transform: scale(1.2);
+            }
+		}
+}
+.form {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+		// .form__title
+
+		&__title {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: darkgrey;
+		}
+
+
+        &__name {
+            min-width: 350px;
+            min-height: 60px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.06);
+            border: none;
+            &::placeholder {
+                color: white;
+                font-size: 20px;
+            }
+        }
+
+        &__email {
+            min-width: 350px;
+            min-height: 60px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.06);
+            border: none;
+            &::placeholder {
+                color: white;
+                font-size: 20px;
+            }
+        }
+		
+
+		&__message {
+            min-width: 350px;
+            min-height: 120px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.06);
+            border: none;
+            &::placeholder {
+                color: white;
+                font-size: 20px;
+                transform: translateY(-100%);
+                
+            }
+		}
+
+		// .form__btn
+
+		&__btn {
+            min-width: 350px;
+            min-height: 60px;
+            padding: 20px;
+            background: #9f97f9;
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            color: white;
+            transition: .3s ease;
+            &:hover {
+                background: black;
+            }
+        
+		}
+}
+.offer {
+    flex: 1 1 30%;
+
+		// .offer__title
+
+		&__title {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: darkgrey;
+            border-bottom: 1px solid darkgray;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+		}
+
+		// .offer__item
+
+		&__item {
+            font-size: 22px;
+            border-bottom: 1px solid darkgray;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            transition: .3s ease;
+            cursor: pointer;
+
+
+            &-triangle {
+                position: relative;
+                width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-right: 16px solid #9f97f9;
+	border-bottom: 8px solid transparent;
+    transition: .3s ease;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        background:#9f97f9;
+        width: 0;
+        height: 0;
+    }
+            }
+
+            &:hover {
+                letter-spacing: 4px;
+                transition: .3s ease;
+
+                span {
+                    transform: translateX(-600%);
+                }
+
+                ::before {
+                    width: 100px;
+                    height: 2px;
+                    right: -105px;
+                }
+            }
+
+            
+
+		}
+}

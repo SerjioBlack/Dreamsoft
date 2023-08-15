@@ -1,0 +1,149 @@
+.feedback {
+    margin-bottom: 60px;
+
+    // .feedback__title
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 60px 0;
+    }
+
+    // .feedback__list
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    // .feedback__item
+
+    &__item {
+        background: $bg-color;
+        border: 1px solid $separator-color;
+        filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.15));
+        padding: 40px;
+    }
+
+    // .feedback__content
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    // .feedback__content-img
+
+    &__content-img {
+    }
+
+    // .feedback__content-desc
+
+    &__content-desc {
+
+        h4 {
+            font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 18px;
+        margin-bottom: 10px;
+        }
+        p {
+            color: #756aee;;
+        }
+        
+    }
+
+    // .feedback__item-desc
+
+    &__item-desc {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 18px;
+        color: rgb(111, 111, 111);
+    }
+}
+
+
+.blog {
+padding: 60px 0;
+
+
+&__title {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+    // .blog__list
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    // .blog__item
+
+    &__item {
+        flex: 0 1 20%;
+        position: relative;
+
+        img {
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: .3s ease;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+        h3 {
+            font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 18px;
+        margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 18px;
+        color: rgb(111, 111, 111)
+        }
+
+        span {
+            position: absolute;
+            background: white;
+            bottom: 120px;
+            left: 0;
+            width: 100px;
+            height: 30px;
+            font-size: 32px;
+            color:#756aee;
+            padding-top: 10px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                bottom: 30px;
+                left: -6px;
+                width: 100px;
+                height: 20px;
+                background: white;
+                transform: skewX(30deg);
+            }
+        }
+    }
+}
+
+
