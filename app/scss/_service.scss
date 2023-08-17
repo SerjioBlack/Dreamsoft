@@ -9,6 +9,7 @@
 
     &__img {
         & img {
+            display: inline-block;
         border-radius: 30px;
         overflow: hidden;
         object-fit: cover;}

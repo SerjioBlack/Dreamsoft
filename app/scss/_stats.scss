@@ -113,7 +113,7 @@
     
     &:hover {
         transform: scale(0.9);
-        border: 10px double black;
+        box-shadow: -8px 10px 5px -1px rgba(0,0,0,1), 10px -9px 5px -1px rgba(0,0,0,1);
         
         }
     }
